@@ -30,12 +30,9 @@ There are several ways how this code can be improved, some of them are:
 - Move most code to library.
 - Imrove gas efficiency.
 - Update tests according to new deployment costs and gas usage and add unit tests.
+- Create more owner accessible functions like to extract extra reward tokens etc.
 
 ## Run tests
 
 npx hardhat test - This will run fork tests on Base Goerli (as currently configured)
 Before running above command make sure to create a .env file, according to .env.example
-
-## Comments on the assignment
-
-ERC4626 vaults facilitate the seamless conversion between two tokens, in our situation, involving WETH and the diamond hands token. Additionally, we have a third token, rewardsToken, which is USDC in our context. However, if the rewards were collected in WETH, employing the vault standard would become more logical since the share value appreciates over time due to the harvesting process.
